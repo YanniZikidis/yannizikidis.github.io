@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yanni Zikidis - Documentary Portfolio</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --light: #ecf0f1;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0 }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 2rem;
+        }
+        h1 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .subtitle {
+            color: var(--secondary);
+            font-size: 1.2rem;
+        }
+        .films-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        .film-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .film-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .film-content {
+            padding: 1.5rem;
+        }
+        .film-title {
+            color: var(--primary);
+            margin-bottom: 0.75rem;
+            font-size: 1.4rem;
+        }
+        .film-meta {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        .film-desc {
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        .btn {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            border-top: 1px solid #ddd;
+        }
+        .featured-badge {
+            background: #e74c3c;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        @media (max-width: 768px) {
+            .films-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Yanni Zikidis - Documentary Portfolio</h1>
+        <p class="subtitle">Impact-driven films documenting social innovation and sustainability</p>
+    </header>
+
+    <main class="films-container">
+        <!-- Memoirs of Solidarity - UPDATED -->
+        <div class="film-card">
+            <div class="film-content">
+                <h2 class="film-title">Memoirs of Solidarity (2017) <span class="featured-badge">Featured</span></h2>
+                <p class="film-meta">Feature Documentary | 25+ Countries | Narrated by Shannon Elizabeth</p>
+                <p class="film-desc">Narrated by actress and animal activist Shannon Elizabeth (American Pie, Scary Movie), this feature documentary explores grassroots solutions across 25+ countries tackling global challenges through social innovation.</p>
+                <a href="https://www.youtube.com/watch?v=1RueaxfdXOQ" class="btn" target="_blank">Watch on YouTube</a>
+            </div>
+        </div>
+
+        <!-- Circo Para Todos -->
+        <div class="film-card">
+            <div class="film-content">
+                <h2 class="film-title">Circo Para Todos (2015)</h2>
+                <p class="film-meta">Colombia | Social Transformation</p>
+                <p class="film-desc">Bringing hope to youth in violent environments through circus arts training, transforming offenders into performers.</p>
+                <a href="https://vimeo.com/194731801" class="btn" target="_blank">View Film</a>
+            </div>
+        </div>
+
+        <!-- Alternative Tourism Group -->
+        <div class="film-card">
+            <div class="film-content">
+                <h2 class="film-title">Alternative Tourism Group (2015)</h2>
+                <p class="film-meta">Palestinian Territories | Justice Tourism</p>
+                <p class="film-desc">Pioneering NGO offering transformative tours that engage with Holy Land's history while empowering local communities.</p>
+                <a href="https://vimeo.com/166618353" class="btn" target="_blank">View Film</a>
+            </div>
+        </div>
+
+        <!-- A Beautiful Resistance -->
+        <div class="film-card">
+            <div class="film-content">
+                <h2 class="film-title">A Beautiful Resistance (2015)</h2>
+                <p class="film-meta">Palestinian Territories | Community Empowerment</p>
+                <p class="film-desc">Empowering children and women through creative expression in Aida refugee camp, Bethlehem.</p>
+                <a href="https://vimeo.com/166618288" class="btn" target="_blank">View Film</a>
+            </div>
+        </div>
+
+        <!-- Sheroes -->
+        <div class="film-card">
+            <div class="film-content">
+                <h2 class="film-title">Sheroes (2015)</h2>
+                <p class="film-meta">India | Survivor Empowerment</p>
+                <p class="film-desc">Cafe and community hub run by acid attack survivors, raising awareness while creating economic opportunities.</p>
+                <a href="https://vimeo.com/166460260" class="btn" target="_blank">View Film</a>
+            </div>
+        </div>
+
+        <!-- Window on Africa -->
+        <div class="film-card">
+            <div class="film-content">
+                <h2 class="film-title">Window on Africa (2014)</h2>
+                <p class="film-meta">Uganda | Sustainable Development</p>
+                <p class="film-desc">Documenting initiatives improving living conditions through education, health, clean water, and sustainable enterprises.</p>
+                <a href="https://vimeo.com/138391786" class="btn" target="_blank">View Film</a>
+            </div>
+        </div>
+
+        <!-- Butterflies -->
+        <div class="film-card">
+            <div class="film-content">
+                <h2 class="film-title">Butterflies (2014)</h2>
+                <p class="film-meta">Uganda | Youth Entrepreneurship</p>
+                <p class="film-desc">Training youth from disadvantaged communities to become social entrepreneurs and changemakers.</p>
+                <a href="https://vimeo.com/135490113" class="btn" target="_blank">View Film</a>
+            </div>
+        </div>
+
+        <!-- Citizens Foundation -->
+        <div class="film-card">
+            <div class="film-content">
+                <h2 class="film-title">Citizens Foundation (2014)</h2>
+                <p class="film-meta">Iceland | Democratic Innovation</p>
+                <p class="film-desc">Pioneering citizen engagement in governance through community-driven solutions and policy co-creation.</p>
+                <a href="https://vimeo.com/166618320" class="btn" target="_blank">View Film</a>
+            </div>
+        </div>
+
+        <!-- Struggling for Recognition -->
+        <div class="film-card">
+            <div class="film-content">
+                <h2 class="film-title">Struggling for Recognition (2013)</h2>
+                <p class="film-meta">Colombia | Circular Economy | Festival Official Selection</p>
+                <p class="film-desc">Examining waste pickers' 22-year fight for labor rights and recognition as circular economy pioneers.</p>
+                <a href="https://vimeo.com/99575020" class="btn" target="_blank">View Film</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Yanni Zikidis | PhD Researcher in Sustainable Media Production</p>
+        <p>Academic Portfolio | ESG Media Governance | Impact Storytelling</p>
+    </footer>
+</body>
+</html>
